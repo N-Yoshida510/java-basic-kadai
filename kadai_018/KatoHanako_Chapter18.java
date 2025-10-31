@@ -2,18 +2,11 @@ package kadai_018;
 
 public class KatoHanako_Chapter18 extends Kato_Chapter18{
 	// コンストラクタでフィールドを初期化
-    public KatoHanako_Chapter18(String familyName,  String address) {
-        this.familyName = familyName;
-        this.address = address;
-        setGivenName();
-    }
+	 public KatoHanako_Chapter18(String familyName,  String address) {
+		 super(familyName,"花子",address);
+	    }
 
-    public void setGivenName() {
-    	this.givenName="花子";
-    	
-    }
-    
-    // 抽象メソッドの実装
+      // 抽象メソッドの実装
     public void eachIntroduce() {
         System.out.println("趣味は読書です");
     }

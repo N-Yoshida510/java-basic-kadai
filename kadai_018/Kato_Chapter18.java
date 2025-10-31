@@ -4,7 +4,19 @@ abstract public class Kato_Chapter18 {
 	  // フィールド 
     public String familyName;  
     public String givenName;   
-    public String address;     
+    public String address; 
+    
+    //コンストラクタ
+    public Kato_Chapter18(String familyName, String givenName, String address) {
+        this.familyName = familyName;
+        this.givenName = givenName;
+        this.address = address;
+    }
+    
+ // givenName を変更するメソッド
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
 
     //  共通の紹介 
     public void commonIntroduce() {
@@ -13,7 +25,7 @@ abstract public class Kato_Chapter18 {
     }
 
     //  個別の紹介
-    public abstract void eachIntroduce();
+    public abstract void eachIntroduce() ;
 
     // 実行
     public void execIntroduce() {
